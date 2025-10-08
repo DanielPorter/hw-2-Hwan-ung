@@ -1,0 +1,41 @@
+---
+AI Documentation for HW2 with prompts and outputs.
+---
+
+Prompt 1: 
+How can I check which Python version my current Jupyter Notebook kernel (ipykernel) is using?
+
+output 1: 
+You can run the following command inside a Jupyter cell:
+!python --version
+Or, in Python code:
+import sys
+print(sys.version)
+
+---
+
+Prompt 2:
+I want to verify which conda environment my Jupyter Notebook is currently running in.
+
+Output 2:
+You can check this by running:
+import sys
+print(sys.executable)
+This will show the path to the Python executable, e.g.:
+/srv/conda/envs/ligo/bin/python
+
+---
+
+Prompt 3:
+I tried to activate my environment using "mamba activate ligo", I get the following error:
+'critical libmamba Shell not initialized'.
+What does this mean?
+
+Output 3:
+The message you are seeing now is that mamba activate is blocked because the micromamba shell has not been initialized.
+You can fix this by running:
+eval "$(micromamba shell hook --shell bash)"
+Then activate your environment with:
+micromamba activate ligo
+After that, you can confirm the environment is active by checking:
+which python
