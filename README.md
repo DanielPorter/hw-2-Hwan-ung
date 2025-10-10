@@ -6,3 +6,5 @@
 )
 
 _This repository is public so that Binder can find it. All code and data is based on the original [LIGO Center for Open Science Tutorial Repository](https://github.com/losc-tutorial/LOSC_Event_tutorial). This repository is a class exercise that restructures the original LIGO code for improved reproducibility, as a homework assignment for the [Fall 2025 installment of UC Berkeley's Stat 159/259 course, _Reproducible and Collaborative Data Science](https://ucb-stat-159-f25.github.io/site/). Authorship of the original analysis code rests with the LIGO collaboration._
+
+In this repository, I set up the ligo environment using micromamba to ensure full reproducibility across systems. I also configured Binder support and added the environment.yml file so that the notebook can be launched and executed reproducibly online.
